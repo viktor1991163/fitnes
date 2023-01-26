@@ -1,0 +1,242 @@
+.products {
+  background-color: $color-ghost-white;
+  padding: 122px 0 120px;
+
+  h2 {
+    margin: 0 0 2px;
+  }
+}
+
+.products__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products__list-time {
+  margin: 0 0 39px;
+  padding: 0;
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.products__item-time {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: rgba(16, 38, 84, 0.5);
+  margin-right: 46px;
+  padding: 13px 0;
+  cursor: pointer;
+
+  &--active {
+    color: $color-sapphire;
+    border-bottom: 2px solid $color-crimson;
+    margin-bottom: -2px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    opacity: 70%;
+  }
+}
+
+.products__list-price {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 470px;
+    height: 494px;
+    background-image: url(../img/products/weight.png);
+    transform: translate(285px, 270px);
+  }
+}
+
+.products__item-price {
+  background-color: $color-default-white;
+  text-align: center;
+  padding: 61px 76px 68px;
+  position: relative;
+  z-index: 1;
+
+  h3 {
+    font-size: 26px;
+    line-height: 28.64px;
+    font-weight: 700;
+    color: $color-sapphire;
+    margin: 0 0 10px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $color-chambray;
+    margin: 0 0 66px;
+  }
+
+  span {
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: 700;
+    color: $color-egyptian-blue;
+    position: relative;
+
+    &::after {
+      content: attr(data-price);
+      position: absolute;
+      top: -90%;
+      left: -13%;
+      font-size: 100px;
+      line-height: 150px;
+      font-weight: 700;
+      color: $color-whisper;
+      opacity: 48%;
+      z-index: -1;
+    }
+  }
+
+  b {
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: 600;
+    color: $color-sapphire;
+    margin-left: 10px;
+  }
+
+  a {
+    display: block;
+    font-size: 12px;
+    line-height: 14.06px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-sapphire;
+    outline: 2px solid $color-sapphire;
+    padding: 24px 0 25px;
+    margin-top: 34px;
+
+    &:hover {
+      opacity: 70%;
+    }
+  }
+}
+
+// .products__item-price:hover {
+//   border: 7px;
+//   border-style: inset;
+//   border-image: $gradient-border 1;
+
+//   a {
+//     color: $color-default-white;
+//     background: $gradient-button;
+//     outline: none;
+//   }
+// }
+
+@media (max-width: $vp-1200) {
+  .products {
+    padding: 101px 0;
+
+    h2 {
+      padding-right: 12px;
+      margin-bottom: 6px;
+    }
+  }
+
+  .products__wrapper {
+    padding: 0 118px;
+  }
+
+  .products__item-time {
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 55px;
+    padding: 12px 0;
+  }
+
+  .products__list-price {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .products__item-price {
+    padding: 69px 119px 68px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .products {
+    padding: 64px 0 68px;
+
+    h2 {
+      padding-right: 10px;
+      margin-bottom: 9px;
+    }
+  }
+
+  .products__list-time {
+    padding-right: 2px;
+    margin: 0 0 34px;
+  }
+
+  .products__item-time {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 45px;
+    padding: 12px 0 13px;
+  }
+
+  .products__wrapper {
+    padding: 0;
+  }
+
+  .products__item-price {
+    padding: 50px 43px 55px;
+
+    h3 {
+      font-size: 22px;
+      line-height: 24.23px;
+    }
+
+    p {
+      margin: 0 0 54px;
+    }
+
+    span {
+      font-size: 48px;
+      line-height: 72px;
+
+      &::after {
+        font-size: 80px;
+        line-height: 120px;
+      }
+    }
+
+    b {
+      font-size: 48px;
+      line-height: 72px;
+      margin-left: 0;
+    }
+
+    a {
+      margin-top: 32px;
+    }
+  }
+}

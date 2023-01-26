@@ -1,0 +1,48 @@
+.main-header {
+  position: relative;
+}
+
+.main-header__text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 103px 0;
+}
+
+.main-header__contact {
+  font-size: 26px;
+  line-height: 31.2px;
+  font-weight: 600;
+  font-family: $ff-alumni;
+  color: $color-default-white;
+  letter-spacing: 0.03em;
+
+  &:hover {
+    opacity: 70%;
+  }
+}
+
+@media (max-width: $vp-1200) {
+  .main-header__text {
+    padding: 35px 45px 0;
+  }
+
+  .main-header__contact {
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .main-header__text {
+    padding: 15px 15px 0;
+  }
+
+  .main-header__contact {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

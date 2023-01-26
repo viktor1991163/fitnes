@@ -1,0 +1,23 @@
+.swiper-button-prev,
+.swiper-button-next {
+  width: 22px;
+  height: 22px;
+  border-top: 1px solid $color-dark-gray;
+  border-left: 1px solid $color-dark-gray;
+  color: transparent;
+
+  &:active {
+    border-top: 1px solid $color-sapphire;
+    border-left: 1px solid $color-sapphire;
+  }
+}
+
+.swiper-button-prev {
+  transform: rotate(-45deg);
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+  transform: rotate(135deg);
+}

@@ -1,0 +1,82 @@
+.recording {
+  background-color: $color-sapphire;
+  font-size: 14px;
+  line-height: 16.41px;
+  padding: 56px 70px 70px calc(50vw - 580px);
+
+  h2 {
+    font-size: 54px;
+    line-height: 84.24px;
+    font-weight: 800;
+    font-family: $ff-alumni;
+    color: $color-default-white;
+    margin: 0 0 10px;
+    letter-spacing: 0.03em;
+  }
+
+  fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    border: none;
+    padding: 0;
+    margin-bottom: 27px;
+  }
+
+  input {
+    font-weight: 400;
+    color: $color-default-white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #74819c;
+    padding: 10px 0;
+
+    &:hover {
+      opacity: 70%;
+    }
+  }
+
+  button {
+    font-size: 14px;
+    line-height: 16.41px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-default-white;
+    background-color: transparent;
+    border: 3px solid $color-default-white;
+    padding: 16px;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 70%;
+    }
+  }
+}
+
+@media (max-width: $vp-1200) {
+  .recording {
+    padding: 50px;
+
+    h2 {
+      font-size: 42px;
+      line-height: 50.4px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: $vp-767) {
+  .recording {
+    h2 {
+      font-size: 32px;
+      line-height: 38.4px;
+      font-weight: 600;
+    }
+
+    fieldset {
+      grid-template-columns: 1fr;
+    }
+  }
+}

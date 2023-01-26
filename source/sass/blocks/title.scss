@@ -1,0 +1,23 @@
+.title {
+  font-size: 54px;
+  line-height: 64.8px;
+  font-weight: 600;
+  font-family: $ff-alumni;
+  color: $color-sapphire;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: $vp-1200) {
+  .title {
+    font-size: 42px;
+    line-height: 50.4px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .title {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+}

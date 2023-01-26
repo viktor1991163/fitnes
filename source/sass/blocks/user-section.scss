@@ -1,0 +1,11 @@
+.user-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+@media (max-width: $vp-1200) {
+  .user-section {
+    display: block;
+  }
+}

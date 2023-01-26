@@ -1,0 +1,184 @@
+.promo {
+  position: relative;
+  color: $color-sapphire;
+  display: grid;
+  grid-template-columns: 1fr 1.58fr;
+  gap: 85px;
+  padding: 120px 103px 235px;
+  margin: 0 auto;
+  max-width: 1366px;
+
+  h2 {
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: 600;
+    font-family: $ff-alumni;
+    margin: 0 0 8px;
+    letter-spacing: 0.03em;
+  }
+
+  span {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    margin-bottom: 38px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    margin: 0 0 8px;
+  }
+}
+
+.promo__text {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 0 60px;
+}
+
+.promo__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.promo__video {
+  position: absolute;
+  top: 54%;
+  left: 39.5%;
+}
+
+.promo__video-wrapper {
+  width: 364px;
+  height: 228px;
+  position: relative;
+}
+
+.promo__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/svg/play.svg);
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  z-index: 5;
+  background-repeat: no-repeat;
+}
+
+.promo__video-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(20, 54, 122, 0.5);
+}
+
+.promo__play {
+  width: 364px;
+  height: 228px;
+}
+
+@media (max-width: $vp-1200) {
+  .promo {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 100px 45px 183px;
+
+    h2 {
+      font-size: 42px;
+      line-height: 50.4px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      margin: 0 15px 0 0;
+    }
+
+    span {
+      margin-bottom: 33px;
+    }
+
+    p {
+      margin-bottom: -6px;
+      text-align: center;
+
+      &:nth-child(2n) {
+        display: none;
+      }
+    }
+  }
+
+  .promo__text {
+    padding: 0 50px;
+    align-items: center;
+  }
+
+  .promo__video {
+    top: 68.8%;
+    left: 32.5%;
+  }
+
+  .promo__video-wrapper {
+    width: 266px;
+    height: 167px;
+  }
+
+  .promo__btn {
+    width: 73px;
+    height: 73px;
+    background-size: 73px 73px;
+  }
+
+  .promo__play {
+    width: 266px;
+    height: 167px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .promo {
+    display: block;
+    padding: 63px 0 70px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 38.4px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      text-align: left;
+      padding-right: 30px;
+    }
+
+    span {
+      margin-bottom: 22px;
+    }
+  }
+
+  .promo__text {
+    padding: 0 15px;
+    align-items: flex-start;
+  }
+
+  .promo__img {
+    margin: 40px 0;
+  }
+
+  .promo__video {
+    position: static;
+    margin: 0 auto;
+    width: 320px;
+  }
+
+  .promo__video-wrapper {
+    width: 320px;
+  }
+
+  .promo__play {
+    width: 320px;
+  }
+}

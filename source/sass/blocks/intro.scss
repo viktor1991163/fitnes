@@ -1,0 +1,156 @@
+.intro {
+  color: $color-default-white;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  padding: 51px 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: right;
+    align-self: center;
+  }
+
+  li {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  span {
+    font-size: 42px;
+    line-height: 57.6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: $ff-alumni;
+    margin: 0 53px 10px 0;
+    letter-spacing: 0.03em;
+  }
+
+  h1 {
+    font-size: 92px;
+    line-height: 112.4px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: $ff-alumni;
+    margin: 0;
+    text-align: right;
+    letter-spacing: 0.05em;
+  }
+
+  a {
+    width: 232px;
+    padding: 20px 0;
+    margin-top: 46px;
+  }
+}
+
+.intro__wrapper {
+  display: flex;
+}
+
+.intro__text-wrapper {
+  display: grid;
+  grid-template-columns: min-content 1.7fr;
+  gap: 64px;
+  margin-left: 33px;
+}
+
+.intro__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 113px;
+}
+
+.intro__img {
+  object-fit: cover;
+}
+
+@media (max-width: $vp-1200) {
+  .intro {
+    padding: 82px 0;
+
+    ul {
+      margin-top: 44px;
+      width: 22%;
+    }
+
+    span {
+      font-size: 32px;
+      line-height: 40.8px;
+      margin-right: 5px;
+      margin-bottom: 6px;
+      text-transform: none;
+    }
+
+    h1 {
+      font-size: 74px;
+      line-height: 86.4px;
+      letter-spacing: 0.02em;
+      text-transform: none;
+      font-weight: 800;
+    }
+
+    a {
+      width: 183px;
+      padding: 21px 0 19px;
+      margin-top: 36px;
+    }
+  }
+
+  .intro__text-wrapper {
+    grid-template-columns: 183px auto;
+    gap: 30px;
+    margin-left: 28px;
+  }
+
+  .intro__text {
+    padding-top: 50px;
+  }
+
+  .intro__img {
+    min-height: 390px;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .intro {
+    padding-bottom: 49px;
+
+    ul {
+      width: auto;
+      margin-top: 3px;
+      margin-right: -113px;
+    }
+
+    span {
+      font-size: 28px;
+      line-height: 33.6px;
+      margin-right: 2px;
+      margin-bottom: 13px;
+    }
+
+    a {
+      width: 290px;
+      margin-top: 23px;
+    }
+  }
+
+  .intro__wrapper {
+    justify-content: flex-end;
+  }
+
+  .intro__text-wrapper {
+    grid-template-columns: 290px;
+    margin-left: 0;
+  }
+
+  .intro__text {
+    padding-top: 26px;
+  }
+
+  .intro__img {
+    display: none;
+  }
+}

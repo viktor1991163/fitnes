@@ -1,0 +1,37 @@
+.logo {
+  text-transform: uppercase;
+  font-family: $ff-alumni;
+  color: $color-default-white;
+  font-weight: 600;
+
+  &--header {
+    font-size: 36px;
+    line-height: 43.2px;
+    letter-spacing: 0.02em;
+  }
+
+  &--footer {
+    font-size: 26px;
+    line-height: 31.2px;
+  }
+}
+
+@media (max-width: $vp-1200) {
+  .logo {
+    &--header {
+      font-size: 24px;
+      line-height: 28.8px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+  }
+}
+
+@media (max-width: $vp-767) {
+  .logo {
+    &--header {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
