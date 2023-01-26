@@ -1,3 +1,24 @@
 .main-footer {
   background-color: $color-black-russian;
+  padding-top: 44px;
+  padding-bottom: 32px;
+}
+
+.main-footer__wrapper {
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+}
+
+@media (max-width: $vp-1200) {
+  .main-footer__wrapper {
+    grid-template-columns: 1fr 4.8fr 1fr;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .main-footer__wrapper {
+    display: block;
+    column-count: 2;
+    column-gap: 30px;
+  }
 }

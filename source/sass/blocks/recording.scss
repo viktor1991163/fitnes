@@ -2,7 +2,7 @@
   background-color: $color-sapphire;
   font-size: 14px;
   line-height: 16.41px;
-  padding: 56px 70px 70px calc(50vw - 580px);
+  padding: 56px 170px 60px calc(50vw - 580px);
 
   h2 {
     font-size: 54px;
@@ -57,26 +57,40 @@
 
 @media (max-width: $vp-1200) {
   .recording {
-    padding: 50px;
+    padding: 65px 163px 70px 133px;
 
     h2 {
       font-size: 42px;
       line-height: 50.4px;
       font-weight: 700;
+      margin: 0 0 22px;
+    }
+
+    fieldset {
+      gap: 50px;
     }
   }
 }
 
 @media (max-width: $vp-767) {
   .recording {
+    padding: 63px 15px 70px;
+
     h2 {
       font-size: 32px;
       line-height: 38.4px;
       font-weight: 600;
+      margin-bottom: 26px;
     }
 
     fieldset {
       grid-template-columns: 1fr;
+      margin: 0 0 37px;
+      gap: 25px;
+    }
+
+    input {
+      padding: 12px 0 8px;
     }
   }
 }

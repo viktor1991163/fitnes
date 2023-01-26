@@ -3,6 +3,17 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   a {
@@ -10,9 +21,45 @@
     line-height: 16.41px;
     font-weight: 400;
     color: $color-default-white;
+    padding: 5px 0;
 
     &:hover {
       color: $color-egyptian-blue;
+    }
+  }
+}
+
+@media (max-width: $vp-1200) {
+  .navigation {
+    li {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $vp-767) {
+  .navigation {
+    ul {
+      display: block;
+    }
+
+    li:first-child {
+      padding-top: 18px;
+      padding-bottom: 15px;
+    }
+
+    li {
+      margin-right: 0;
+      padding-bottom: 17px;
+    }
+
+    a {
+      font-size: 16px;
+      line-height: 18.75px;
     }
   }
 }

@@ -1,14 +1,14 @@
 .contacts {
   border-top: 1px solid #74819c;
-  padding: 56px calc(50vw - 580px) 70px 70px;
+  padding: 56px calc(50vw - 580px) 65px 65px;
 
   h2 {
     text-align: left;
-    margin: 0;
+    margin: 0 0 23px 55px;
   }
 
   ul {
-    margin: 0;
+    margin: 0 0 0 20px;
     padding: 0;
     list-style-type: none;
     display: grid;
@@ -18,15 +18,22 @@
     &::after {
       content: "";
       position: absolute;
-      top: 15px;
-      bottom: 15px;
-      left: 50%;
+      top: 20px;
+      bottom: 8px;
+      left: 54%;
       border: 1px solid #74819c;
     }
   }
 
   li {
-    padding: 15px 60px 9px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px 20px 3px 40px;
+
+    &:nth-child(2n) {
+      padding: 15px 20px 3px 82px;
+    }
   }
 
   h3 {
@@ -51,17 +58,68 @@
 
 @media (max-width: $vp-1200) {
   .contacts {
-    padding: 50px;
+    padding: 62px 163px 52px 133px;
+
+    ul {
+      margin: 0;
+
+      &::after {
+        left: 56.3%;
+      }
+    }
+
+    h2 {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+
+    li {
+      padding: 10px 10px 10px 0;
+
+      &:nth-child(2n) {
+        padding: 10px 10px 10px 78px;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 5px;
+    }
+
+    p,
+    a {
+      font-size: 18px;
+      line-height: 27.42px;
+    }
   }
 }
 
 @media (max-width: $vp-767) {
   .contacts {
+    padding: 63px 15px 43px;
+
+    h2 {
+      margin-bottom: 33px;
+    }
+
     ul {
       grid-template-columns: 1fr;
 
       &::after {
         display: none;
+      }
+    }
+
+    li {
+      padding: 0 0 20px;
+
+      &:nth-child(2n) {
+        padding: 0 0 20px;
+      }
+
+      &:nth-child(3n) {
+        grid-row: 2/3;
       }
     }
   }
