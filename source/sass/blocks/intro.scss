@@ -9,6 +9,8 @@
     list-style-type: none;
     text-align: right;
     align-self: center;
+    margin-top: 114px;
+    margin-left: 20px;
   }
 
   li {
@@ -53,7 +55,7 @@
   display: grid;
   grid-template-columns: min-content 1.7fr;
   gap: 64px;
-  margin-left: 33px;
+  margin-left: 13px;
 }
 
 .intro__text {
@@ -72,7 +74,7 @@
     padding: 82px 0;
 
     ul {
-      margin-top: 44px;
+      margin: 44px 0 0 0;
       width: 22%;
     }
 
@@ -119,9 +121,10 @@
     padding-bottom: 49px;
 
     ul {
+      position: absolute;
       width: auto;
       margin-top: 3px;
-      margin-right: -113px;
+      right: 177px;
     }
 
     span {
@@ -138,6 +141,7 @@
   }
 
   .intro__wrapper {
+    position: relative;
     justify-content: flex-end;
   }
 

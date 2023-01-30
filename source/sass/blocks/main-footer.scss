@@ -16,9 +16,11 @@
 }
 
 @media (max-width: $vp-767) {
+  .main-footer {
+    padding-top: 46px;
+  }
+
   .main-footer__wrapper {
     display: block;
-    column-count: 2;
-    column-gap: 30px;
   }
 }

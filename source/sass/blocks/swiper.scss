@@ -21,3 +21,15 @@
   right: 0;
   transform: rotate(135deg);
 }
+
+@media (max-width: $vp-767) {
+  .swiper-button-prev {
+    width: 14px;
+    height: 14px;
+  }
+
+  .swiper-button-next {
+    width: 14px;
+    height: 14px;
+  }
+}

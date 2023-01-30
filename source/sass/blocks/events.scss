@@ -2,7 +2,7 @@
   color: $color-default-white;
   display: grid;
   grid-template-columns: 1fr 1.32fr;
-  padding-top: 123px;
+  padding-top: 120px;
   padding-bottom: 72px;
 
   h2 {
@@ -183,7 +183,6 @@
   .events {
     padding: 70px 0 50px;
     grid-template-columns: 1fr;
-    grid-auto-rows: 1fr 1fr;
 
     p {
       align-self: flex-start;
@@ -192,6 +191,7 @@
 
     img {
       min-width: 100%;
+      min-height: 292px;
     }
 
     a {

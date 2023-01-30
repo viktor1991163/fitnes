@@ -42,12 +42,13 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  max-height: 401px;
 }
 
 .promo__video {
   position: absolute;
-  top: 54%;
   left: 39.5%;
+  top: 408px;
 }
 
 .promo__video-wrapper {
@@ -117,8 +118,9 @@
   }
 
   .promo__video {
-    top: 68.8%;
     left: 32.5%;
+    top: auto;
+    bottom: 99px;
   }
 
   .promo__video-wrapper {
@@ -135,6 +137,10 @@
   .promo__play {
     width: 266px;
     height: 167px;
+  }
+
+  .promo__img {
+    max-height: 100%;
   }
 }
 
@@ -171,14 +177,21 @@
   .promo__video {
     position: static;
     margin: 0 auto;
-    width: 320px;
+    width: auto;
   }
 
   .promo__video-wrapper {
-    width: 320px;
+    width: auto;
+    height: auto;
   }
 
   .promo__play {
-    width: 320px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .promo__video-img {
+    width: 100%;
+    object-fit: cover;
   }
 }

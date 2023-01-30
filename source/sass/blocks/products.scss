@@ -139,6 +139,7 @@
     outline: 2px solid $color-sapphire;
     padding: 24px 0 25px;
     margin-top: 36px;
+    user-select: none;
 
     &:hover {
       opacity: 70%;
@@ -181,7 +182,7 @@
 
   .products__list-price {
     grid-template-columns: 1fr;
-    gap: 35px;
+    gap: 32px;
   }
 
   .products__item-price {
@@ -215,6 +216,15 @@
     padding: 0;
   }
 
+  .products__list-price {
+    gap: 33px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+
   .products__item-price {
     padding: 44px 36px 48px;
 
@@ -234,6 +244,7 @@
       &::after {
         font-size: 80px;
         line-height: 120px;
+        top: -65%;
       }
     }
 

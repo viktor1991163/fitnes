@@ -34,6 +34,10 @@
     &:hover {
       opacity: 70%;
     }
+
+    &::placeholder {
+      color: $color-default-white;
+    }
   }
 
   button {
@@ -57,7 +61,7 @@
 
 @media (max-width: $vp-1200) {
   .recording {
-    padding: 65px 163px 70px 133px;
+    padding: 65px 163px 68px 133px;
 
     h2 {
       font-size: 42px;
@@ -74,7 +78,7 @@
 
 @media (max-width: $vp-767) {
   .recording {
-    padding: 63px 15px 70px;
+    padding: 63px 15px 65px;
 
     h2 {
       font-size: 32px;

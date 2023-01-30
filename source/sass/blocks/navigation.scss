@@ -43,12 +43,17 @@
 
 @media (max-width: $vp-767) {
   .navigation {
+    margin-top: -24px;
+    margin-bottom: 15px;
+    column-count: 2;
+    column-gap: 30px;
+
     ul {
       display: block;
     }
 
     li:first-child {
-      padding-top: 18px;
+      padding-top: 40px;
       padding-bottom: 15px;
     }
 
