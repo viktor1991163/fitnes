@@ -1477,8 +1477,7 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
@@ -1497,6 +1496,11 @@ button,
   -webkit-transform: translate(285px, 270px);
   -ms-transform: translate(285px, 270px);
   transform: translate(285px, 270px);
+}
+
+.products__list-price--active {
+  display: -ms-grid;
+  display: grid;
 }
 
 .products__item-price {
@@ -1524,17 +1528,12 @@ button,
   margin: 0 0 66px;
 }
 
-.products__item-price span.active {
-  display: inline-block;
-}
-
 .products__item-price span {
   font-size: 60px;
   line-height: 90px;
   font-weight: 700;
   color: #103aae;
   position: relative;
-  display: none;
 }
 
 .products__item-price span::after {
@@ -1790,9 +1789,6 @@ button,
   padding: 50px 40px;
   overflow: auto;
   background-color: rgba(16, 38, 84, 0.89);
-  -webkit-transition: background-color 0.2s linear;
-  -o-transition: background-color 0.2s linear;
-  transition: background-color 0.2s linear;
 }
 
 .coaches__item:hover h3,
